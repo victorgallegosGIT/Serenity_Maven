@@ -4,18 +4,18 @@
     como un nuevo cliente
     Quiero ingresar a la pagina www.abc.com
     para realizar una compra de un articulo
-
+@EscenarioSinEjemplos
   Escenario: Agregar articulos al carrito de compras
-    Dado que un nuevo cliente accede hasta la web de compras
-    Cuando el agrega un producto al carro
+    Dado que un nuevo usuario quiere ingresar al sistema
+    Cuando el pone el nombre VICTOR222 y contrasenia abc
     Entonces el ve los productos listado en el carro de compras
-
+    @EscenarioConEjemplos
     Esquema del escenario: agregar articulos al carrito de compras
-      Dado que un nuevo cliente accede hasta la web de compras
+      Dado que un nuevo usuario quiere ingresar al sistema
       Cuando el agrega productos al carro
-      |<nombreProducto> | <cantidadAgregar> |
+      |<nombreUsuario> | <contrasenia> |
       Entonces el ve los productos listado en el carro de compras
 
       Ejemplos:
-      | nombreProducto | cantidadAgregar |
-      | Tapabocas n95 | 100              |
+      | nombreUsuario | contrasenia |
+      | Tapabocas n95 | abc              |

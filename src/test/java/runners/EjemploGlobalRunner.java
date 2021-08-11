@@ -8,7 +8,7 @@ import org.junit.runner.RunWith;
 @CucumberOptions(
         features = "src/test/resources/feactures/EjemploGlobal.feacture",
         glue = "stepdefinitions",
-        tags = "",
+        tags = "@EscenarioSinEjemplos",
         snippets =  SnippetType.CAMELCASE
 
 )
