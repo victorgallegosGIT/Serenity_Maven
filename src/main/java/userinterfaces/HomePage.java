@@ -10,4 +10,5 @@ public class HomePage extends PageObject {
     public  static  final Target INPUT_LOGIN_NOMBRE = Target.the("Login de usuario con nombre").located(By.id("txtUsuario"));
     public  static  final Target INPUT_LOGIN_CONTRASENIA = Target.the("Login de usuario con contraseña").located(By.id("txtContraseña"));
     public  static  final Target BUTTON_LOGIN = Target.the("Clic en Login").located(By.id("btnLogin"));
+    public  static  final Target BUTTON_CONFIGURACION = Target.the("Clic en CONFIGURACION").located(By.id("ContentPlaceHolder1_btnConfiguracion"));
 }

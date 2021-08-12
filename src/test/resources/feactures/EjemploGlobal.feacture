@@ -1,21 +1,40 @@
 # language: es
 
-  Característica: Realizar compras de articulos
-    como un nuevo cliente
+  Característica: Realizar login de usuario
+    como un administrador
     Quiero ingresar a la pagina www.abc.com
-    para realizar una compra de un articulo
+    para realizar una alta de usuario
+
 @EscenarioSinEjemplos
   Escenario: Agregar articulos al carrito de compras
     Dado que un nuevo usuario quiere ingresar al sistema
     Cuando el pone el nombre VICTOR222 y contrasenia abc
-    Entonces el ve los productos listado en el carro de compras
-    @EscenarioConEjemplos
+    Entonces el ve el sistema y hace clic en configuracion
+
+  @EscenarioConEjemplos
     Esquema del escenario: agregar articulos al carrito de compras
       Dado que un nuevo usuario quiere ingresar al sistema
       Cuando el agrega productos al carro
       |<nombreUsuario> | <contrasenia> |
-      Entonces el ve los productos listado en el carro de compras
+      Entonces el ve el sistema y hace clic en configuracion
 
-      Ejemplos:
+    Ejemplos:
       | nombreUsuario | contrasenia |
-      | Tapabocas n95 | abc              |
+      | VICTOR222 | abc             |
+
+  @EscenarioAltaUsuario
+  Esquema del escenario: Alta Usuario
+     Dado que actor quiere dar de alta un nuevo usuario
+     Y   hace clic en alta usuario
+     Cuando el agrega los datos
+     |<nombreUser> | <nombre> | |<apellido> | <dni> | |<telefono> | <direccion> |
+    Entonces el ve el nuevo usuario registrado
+
+
+
+
+
+  Ejemplos:
+      | nombreUser | nombre | apellido | dni    | telefono | direccion |
+      | VICTOR222 | abc     |  castele | 111555|  368777895 | cordoba 235 |
+

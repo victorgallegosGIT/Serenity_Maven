@@ -29,13 +29,16 @@ public class EjemploGlobalSteps {
     );
     }
 
-    @Entonces("^el ve los productos listado en el carro de compras$")
-    public void elVeLosProductosListadoEnElCarroDeCompras() {
+    @Entonces("^el ve el sistema y hace clic en configuracion$")
+    public void elVeElSistemayHaceClicEnConfiguracion() {
 
     }
 
     @Cuando("^el agrega productos al carro$")
     public void elAgregaProductosAlCarro(List<String> datos) {
+        actor.wasAbleTo(
+                Login.conDrescripcion(datos.get(0), datos.get(1))
+        );
 
     }
 
